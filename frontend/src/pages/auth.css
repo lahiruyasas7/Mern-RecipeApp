@@ -1,0 +1,19 @@
+.login-container{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    background-color: rgb(194, 189, 189);
+    height: 300px;
+    width: 350px;
+}
+.register-container{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    background-color: rgb(194, 189, 189);
+    height: 300px;
+    width: 350px;
+}
+button{
+    margin: 40px;
+}
