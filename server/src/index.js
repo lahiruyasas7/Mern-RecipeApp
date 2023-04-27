@@ -2,7 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 
-import {userRouter} from './routes/users.js'
+import {userRouter} from './routes/users.js';
+import {recipesRouter} from './routes/recipes.js'
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.get('/', function(req, res) {
   
 
 app.use("/auth", userRouter);
+app.use("/recipes", recipesRouter)
 
 mongoose.connect(
     "mongodb+srv://lahiruyasasme:Melaniteshiya1@recipe-app.ymlhz8g.mongodb.net/Recipe-App?retryWrites=true&w=majority",
